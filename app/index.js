@@ -1,6 +1,7 @@
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Card } from "react-native-paper";
+import { FontAwesome } from '@expo/vector-icons';
 
 const BusinessNameGenrator = () => {
     return (
@@ -14,7 +15,7 @@ const BusinessNameGenrator = () => {
                     </Card>
                     <Card style={styles.smallcard}>
                         <Card.Content>
-                            <Text>Business Name Generator</Text>
+                            <FontAwesome name="star" size={20} color="black" />
                         </Card.Content>
                     </Card>
                 </View>
@@ -31,21 +32,19 @@ const styles = StyleSheet.create({
     cardcontainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        margin: 10,
     },
     card: {
         margin: 10,
         padding: 10,
         backgroundColor: '#fff',
-        borderRadius: 10,
-        elevation: 5,
+        borderRadius: 5,
     },
     smallcard: {
-        margin: 10,
-        padding: 10,
+        margin: 5,
+        padding: 5,
         backgroundColor: '#fff',
         borderRadius: 10,
         elevation: 5,
-        width: '45%',
+        width: '100%',
     },
 })
