@@ -11,14 +11,17 @@ const BusinessNameGenrator = () => {
                     <View style={styles.cards}>
                         <Card style={styles.card}>
                             <Card.Content>
-                                <Text>Business Generator</Text>
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                                    <FontAwesome name="plus" style={styles.icon} size={30} color="#F25900" />
+                                    <Text style={styles.text}>Business Generator</Text>
+                                </View>
                             </Card.Content>
                         </Card>
                     </View>
                     <View style={styles.cards2}>
                         <Card style={styles.smallcard}>
                             <Card.Content>
-                                <FontAwesome name="star" size={20} color="black" />
+                                <FontAwesome name="star" style={styles.icon} size={40} color="white" />
                             </Card.Content>
                         </Card>
                     </View>
@@ -27,14 +30,17 @@ const BusinessNameGenrator = () => {
                     <View style={styles.cards}>
                         <Card style={styles.card}>
                             <Card.Content>
-                                <Text>Business Generator</Text>
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                                    <FontAwesome name="plus" style={styles.icon} size={30} color="#F25900" />
+                                    <Text style={styles.text} >Business Generator</Text>
+                                </View>
                             </Card.Content>
                         </Card>
                     </View>
                     <View style={styles.cards2}>
                         <Card style={styles.smallcard}>
                             <Card.Content>
-                                <FontAwesome name="star" size={20} color="black" />
+                                <FontAwesome name="star" style={styles.icon} size={40} color="white" />
                             </Card.Content>
                         </Card>
                     </View>
@@ -57,17 +63,32 @@ const styles = StyleSheet.create({
     },
     card: {
         margin: 10,
-        backgroundColor: '#fff',
+        backgroundColor: "#FFF5E5",
         borderRadius: 5,
+        borderColor: "#FFF5E5",
+        borderWidth: 1,
     },
     smallcard: {
-        backgroundColor: '#fff',
+        backgroundColor: "#FFF5E5",
         borderRadius: 5,
+        borderColor: "#FFF5E5",
+        borderWidth: 1,
     },
     cards: {
         width: 300,
     },
     cards2: {
-        width: 50,
+        // width: 50,
+    },
+    icon: {
+        alignSelf: 'center',
+        margin: -10,
+    },
+    text: {
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: '#666',
+        alignSelf: 'center',
+        fontFamily : Righteous,
     }
-})
+});
