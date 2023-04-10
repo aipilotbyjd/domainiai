@@ -8,16 +8,20 @@ const BusinessNameGenrator = () => {
         <SafeAreaView>
             <View style={styles.container}>
                 <View style={styles.cardcontainer}>
-                    <Card style={styles.card}>
-                        <Card.Content>
-                            <Text>Business Name Generator</Text>
-                        </Card.Content>
-                    </Card>
-                    <Card style={styles.smallcard}>
-                        <Card.Content>
-                            <FontAwesome name="star" size={20} color="black" />
-                        </Card.Content>
-                    </Card>
+                    <View style={styles.cards}>
+                        <Card style={styles.card}>
+                            <Card.Content>
+                                <Text>Business Generator</Text>
+                            </Card.Content>
+                        </Card>
+                    </View>
+                    <View style={styles.cards2}>
+                        <Card style={styles.smallcard}>
+                            <Card.Content>
+                                <FontAwesome name="star" size={20} color="black" />
+                            </Card.Content>
+                        </Card>
+                    </View>
                 </View>
             </View>
         </SafeAreaView>
@@ -43,4 +47,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         borderRadius: 5,
     },
+    cards: {
+        width: 270,
+    },
+    cards2: {
+        width: 50,
+    }
 })
