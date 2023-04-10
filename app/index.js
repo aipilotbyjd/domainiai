@@ -29,11 +29,9 @@ const styles = StyleSheet.create({
     container: {
     },
     cardcontainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         margin: 10,
-        padding: 10,
-        backgroundColor: '#fff',
-        borderRadius: 10,
-        elevation: 5,
     },
     card: {
         margin: 10,
@@ -41,5 +39,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         borderRadius: 10,
         elevation: 5,
+    },
+    smallcard: {
+        margin: 10,
+        padding: 10,
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        elevation: 5,
+        width: '45%',
     },
 })
