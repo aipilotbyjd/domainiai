@@ -31,20 +31,16 @@ const styles = StyleSheet.create({
     },
     cardcontainer: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     card: {
         margin: 10,
-        padding: 10,
         backgroundColor: '#fff',
         borderRadius: 5,
     },
     smallcard: {
-        margin: 5,
-        padding: 5,
         backgroundColor: '#fff',
-        borderRadius: 10,
-        elevation: 5,
-        width: '100%',
+        borderRadius: 5,
     },
 })
