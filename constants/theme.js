@@ -24,6 +24,7 @@ const FONT = {
   regular: "DMRegular",
   medium: "DMMedium",
   bold: "DMBold",
+  righteous: "Righteous",
 };
 
 const SIZES = {

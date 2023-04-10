@@ -2,6 +2,7 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Card } from "react-native-paper";
 import { FontAwesome } from '@expo/vector-icons';
+import { FONTS } from '../constants';
 
 const BusinessNameGenrator = () => {
     return (
@@ -89,6 +90,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#666',
         alignSelf: 'center',
-        fontFamily : Righteous,
+        fontFamily: FONTS.regular,
     }
 });
