@@ -50,7 +50,7 @@ const BusinessNameGenerator = () => {
 
   const generateBusinessNames = async () => {
     try {
-      // generateNamebyAI();
+      generateNamebyAI();
     } catch (error) {
       console.error(error);
     }
@@ -58,14 +58,14 @@ const BusinessNameGenerator = () => {
 
   const checkDomainAvailability = async (businessName) => {
     try {
-      const response = await axios.get(
-        `https://api.domainr.com/v2/status?domain=${businessName}.com`
-      );
-      const available = response.data.status[0].status === "inactive";
-      setDomainNames((domainNames) => [
-        ...domainNames,
-        { name: businessName, available },
-      ]);
+      // const response = await axios.get(
+      //   `https://api.domainr.com/v2/status?domain=${businessName}.com`
+      // );
+      // const available = response.data.status[0].status === "inactive";
+      // setDomainNames((domainNames) => [
+      //   ...domainNames,
+      //   { name: businessName, available },
+      // ]);
     } catch (error) {
       console.error(error);
     }
