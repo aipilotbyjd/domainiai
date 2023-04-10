@@ -111,7 +111,7 @@ const BusinessNameGenerator = () => {
       <Button mode="contained" onPress={generateBusinessNames}>
         Generate Business Names
       </Button>
-      {domainNames.length > 0 && renderAccordion()}
+      {businessNames.length > 0 && renderAccordion()}
     </View>
   );
 };
