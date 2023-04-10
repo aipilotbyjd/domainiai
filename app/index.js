@@ -23,6 +23,22 @@ const BusinessNameGenrator = () => {
                         </Card>
                     </View>
                 </View>
+                <View style={styles.cardcontainer}>
+                    <View style={styles.cards}>
+                        <Card style={styles.card}>
+                            <Card.Content>
+                                <Text>Business Generator</Text>
+                            </Card.Content>
+                        </Card>
+                    </View>
+                    <View style={styles.cards2}>
+                        <Card style={styles.smallcard}>
+                            <Card.Content>
+                                <FontAwesome name="star" size={20} color="black" />
+                            </Card.Content>
+                        </Card>
+                    </View>
+                </View>
             </View>
         </SafeAreaView>
     )
@@ -37,6 +53,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        marginLeft: -10,
     },
     card: {
         margin: 10,
@@ -48,7 +65,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
     },
     cards: {
-        width: 270,
+        width: 300,
     },
     cards2: {
         width: 50,
